@@ -7,8 +7,7 @@ const projects = [
     description: "Une page web personnalisée utilisant React et Tailwind.",
     image: "/projects/portfolio.png",
     tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    URL: "https://github.com/TLX542/portfolio",
   },
   {
     id: 2,
@@ -17,8 +16,7 @@ const projects = [
       "Un module qui permet de détecter et de signaler aisément les erreurs dans les vecteurs géométriques.",
     image: "/projects/qgis.png",
     tags: ["Python", "API QGIS", "Orienté Objet"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/TLX542/portage-OGRE-QGIS",
+    URL: "https://github.com/TLX542/portage-OGRE-QGIS",
   },
   {
     id: 3,
@@ -27,8 +25,7 @@ const projects = [
       "Un moteur 3D capable de calculer les rayons lumineux sur les objets afin d'obtenir des ombres réalistes.",
     image: "/projects/raytracer.png",
     tags: ["C++", "Orienté Objet", "SFML", "Ray Tracing"],
-    demoUrl: "#",
-    githubUrl: "#",
+    URL: "#",
   },
   {
     id: 4,
@@ -37,8 +34,7 @@ const projects = [
       "Une arcade qui, à l'heure actuelle, regroupe deux jeux et trois bibliothèques graphiques, capable de passer de l'un à l'autre en cours d'exécution.",
     image: "/projects/arcade.png",
     tags: ["C++", "Orienté Objet", "Chargement Dynamique"],
-    demoUrl: "#",
-    githubUrl: "#",
+    URL: "#",
   },
   {
     id: 5,
@@ -47,8 +43,7 @@ const projects = [
       "Un logiciel qui permet à un utilisateur de réduire la taille d'images en se servant astucieusement de la moyenne globale des couleurs.",
     image: "/projects/compressor.png",
     tags: ["Haskell", "Programation fonctionelle"],
-    demoUrl: "#",
-    githubUrl: "#",
+    URL: "#",
   },
   {
     id: 6,
@@ -57,8 +52,7 @@ const projects = [
       "Un 'jeu' de la vie en une dimension capable de calculer sans fin et de poursuivre indéfiniment.",
     image: "/projects/WolframRule30.png",
     tags: ["Haskell", "Programation fonctionelle"],
-    demoUrl: "#",
-    githubUrl: "#",
+    URL: "#",
   },
 ];
 
@@ -110,18 +104,11 @@ export const ProjectsSection = () => {
                 <div className="flex justify-start items-center mt-auto">
                   <div className="flex space-x-3">
                     <a
-                      href={project.demoUrl}
+                      href={project.URL}
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <ExternalLink size={18} />
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={18} />
                     </a>
                   </div>
                 </div>
