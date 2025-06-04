@@ -8,8 +8,14 @@ export const StarBackground = () => {
   const [meteors, setMeteors] = useState([]);
 
   useEffect(() => {
-    generateStars();
-    generateMeteors();
+    // Small delay to ensure window dimensions are available
+    const initializeBackground = () => {
+      generateStars();
+      generateMeteors();
+    };
+
+    // Use setTimeout to ensure window is ready
+    const timeoutId = setTimeout(initializeBackground, 100);
 
     const handleResize = () => {
       generateStars();
@@ -17,7 +23,10 @@ export const StarBackground = () => {
 
     window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("resize", handleResize);
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const generateStars = () => {
@@ -64,7 +73,7 @@ export const StarBackground = () => {
       {stars.map((star) => (
         <div
           key={star.id}
-          className="star animate-pulse-subtle"
+          className="absolute bg-white rounded-full star animate-pulse-subtle"
           style={{
             width: star.size + "px",
             height: star.size + "px",
@@ -79,13 +88,13 @@ export const StarBackground = () => {
       {meteors.map((meteor) => (
         <div
           key={meteor.id}
-          className="meteor animate-meteor"
+          className="absolute meteor animate-meteor"
           style={{
             width: meteor.size * 50 + "px",
             height: meteor.size * 2 + "px",
             left: meteor.x + "%",
             top: meteor.y + "%",
-            animationDelay: meteor.delay,
+            animationDelay: meteor.delay + "s",
             animationDuration: meteor.animationDuration + "s",
           }}
         />

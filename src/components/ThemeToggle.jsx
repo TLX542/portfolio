@@ -32,9 +32,11 @@ export const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-        "focus:outlin-hidden"
+        "fixed top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
+        "focus:outline-hidden",
+        "sm:right-5 max-sm:right-2" // Position to the right of menu button on mobile
       )}
+      aria-label={isDarkMode ? "Passer au mode clair" : "Passer au mode sombre"}
     >
       {isDarkMode ? (
         <Sun className="h-6 w-6 text-yellow-300" />
