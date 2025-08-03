@@ -37,7 +37,8 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="#contact"
+                href="/CV Ta'o DARBELLAY.pdf"
+                download="CV_Tao_DARBELLAY.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Télécharger mon CV
