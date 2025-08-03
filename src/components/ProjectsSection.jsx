@@ -25,7 +25,7 @@ const projects = [
       "Un moteur 3D capable de calculer les rayons lumineux sur les objets afin d'obtenir des ombres réalistes.",
     image: "/projects/raytracer.png",
     tags: ["C++", "Orienté Objet", "SFML", "Ray Tracing"],
-    URL: "#",
+    URL: "https://github.com/TLX542/modeleur-3D",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const projects = [
       "Une arcade qui, à l'heure actuelle, regroupe deux jeux et trois bibliothèques graphiques, capable de passer de l'un à l'autre en cours d'exécution.",
     image: "/projects/arcade.png",
     tags: ["C++", "Orienté Objet", "Chargement Dynamique"],
-    URL: "#",
+    URL: "https://github.com/TLX542/mini-arcade",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const projects = [
       "Un logiciel qui permet à un utilisateur de réduire la taille d'images en se servant astucieusement de la moyenne globale des couleurs.",
     image: "/projects/compressor.png",
     tags: ["Haskell", "Programation fonctionelle"],
-    URL: "#",
+    URL: "https://github.com/TLX542/image-compressor",
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ const projects = [
       "Un 'jeu' de la vie en une dimension capable de calculer sans fin et de poursuivre indéfiniment.",
     image: "/projects/WolframRule30.png",
     tags: ["Haskell", "Programation fonctionelle"],
-    URL: "#",
+    URL: "https://github.com/TLX542/cellular-automation",
   },
 ];
 
