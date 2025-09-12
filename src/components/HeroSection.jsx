@@ -23,18 +23,14 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Je suis à présent en deuxième année d'études en Informatique à Epitech Nancy.
+            Je suisa actuellement en troisième année d'études en Informatique à Epitech Nancy.
           </p>
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Je suis à la recherche d'un stage à mi-temps les jeudis et vendredis
-            du 18 septembre 2025 au 28 février 2026.
+            Je suis à la recherche d'un stage à plein temps d'une
+            durée de 4 mois, commençant le premier avril 2026.
             <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto">
-              La semaine 45 et 46 sont banalisées à cause d'un rappel scolaire.
+              (1er Avril 2026 à fin Juillet / début Août)
             </p>
-          </p>
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Je suis également à la recherche d'un stage à plein temps d'une
-            durée de 4 à 5 mois, commençant le premier avril 2026.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
