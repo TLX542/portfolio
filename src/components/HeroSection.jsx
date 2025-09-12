@@ -23,7 +23,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Je suisa actuellement en troisième année d'études en Informatique à Epitech Nancy.
+            Je suis actuellement en troisième année d'études en Informatique à Epitech Nancy.
           </p>
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
             Je suis à la recherche d'un stage à plein temps d'une
