@@ -2,7 +2,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
-  // Dev
+  // Langages
   { name: "C", category: "langages" },
   { name: "C++", category: "langages" },
   { name: "Python", category: "langages" },
@@ -23,8 +23,8 @@ const skills = [
   { name: "Node.js", category: "backend" },
   { name: "PostgreSQL", category: "backend" },
 
-  // Tools
-  { name: "Git/GitHub", category: "outils" },
+  // Outils
+  { name: "Git / GitHub", category: "outils" },
   { name: "VS Code", category: "outils" },
   { name: "Docker", category: "outils" },
 ];
@@ -37,23 +37,24 @@ export const SkillsSection = () => {
   const filteredSkills = skills.filter(
     (skill) => activeCategory === "global" || skill.category === activeCategory
   );
+
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          Mes <span className="text-primary"> Compétences</span>
+          Mes <span className="text-primary">compétences</span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category, key) => (
+          {categories.map((category) => (
             <button
-              key={key}
+              key={category}
               onClick={() => setActiveCategory(category)}
               className={cn(
                 "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-forefround hover:bd-secondary"
+                  : "bg-secondary/70 text-foreground hover:bg-secondary"
               )}
             >
               {category}
@@ -62,13 +63,13 @@ export const SkillsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSkills.map((skill, key) => (
+          {filteredSkills.map((skill, idx) => (
             <div
-              key={key}
+              key={`${skill.name}-${idx}`}
               className="bg-card p-6 rounded-lg shadow-xs card-hover"
             >
-              <div className="text-left mb-4">
-                <h3 className="font-semibold text-lg"> {skill.name}</h3>
+              <div className="text-left mb-1">
+                <h3 className="font-semibold text-lg">{skill.name}</h3>
               </div>
             </div>
           ))}

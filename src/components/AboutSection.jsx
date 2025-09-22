@@ -3,37 +3,32 @@ import { Briefcase, Code, User } from "lucide-react";
 export const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-4 relative">
-      {" "}
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          <span className="text-primary"> Qui</span> Suis-je?
+          <span className="text-primary">Qui</span> suis-je ?
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Développeur Logiciel Passionné et Créateur de Solutions
+              Développeur logiciel (M2 Epitech Nancy)
             </h3>
 
             <p className="text-muted-foreground">
-              J'effectue mon Master 2 en Informatique à Epitech Nancy, avec une
-              spécialisation dans le développement logiciel. Je suis spécialisé
-              dans le développement de logiciels réactifs, accessibles et efficaces
-              en employant des technologies contemporaines.
+              Je conçois des outils simples, lisibles et robustes. Je privilégie une
+              approche pragmatique : comprendre le besoin, livrer une base propre,
+              itérer.
             </p>
 
             <p className="text-muted-foreground">
-              Je suis passionné par l'élaboration de solutions raffinées à des
-              problématiquescomplexes et je m'efforce d'apprendre en continu les
-              technologies et méthodes les plus récentes pour demeurer à
-              l'avant-garde du secteur dynamique du développement logiciel.
-              Mon but est de demeurer en perpétuel changement.
+              J'aime résoudre des problématiques complexes sans surcouche inutile.
+              Je reste attentif aux évolutions techniques pour garder des pratiques
+              actuelles tout en évitant le superflu.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
-                {" "}
-                Me Contacter
+                Me contacter
               </a>
 
               <a
@@ -53,9 +48,12 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Développement Logiciel</h4>
+                  <h4 className="font-semibold text-lg">
+                    Développement logiciel
+                  </h4>
                   <p className="text-muted-foreground">
-                    Création d'applications dynamiques utilisant des technologies actuelles.
+                    Applications réactives, maintenables. Attention portée aux
+                    performances et à la lisibilité du code.
                   </p>
                 </div>
               </div>
@@ -66,10 +64,10 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Design UI/UX</h4>
+                  <h4 className="font-semibold text-lg">UI / UX</h4>
                   <p className="text-muted-foreground">
-                    Conception des interfaces utilisateurs intuitives et des
-                    expériences utilisateurs sans accroc.
+                    Interfaces sobres. Priorité à l'usage réel plutôt qu'à
+                    l'esthétique gratuite.
                   </p>
                 </div>
               </div>
@@ -83,8 +81,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Gestion de projet</h4>
                   <p className="text-muted-foreground">
-                    Mener des projets de l'idéation à la mise en œuvre en
-                    utilisant des méthodologies agiles.
+                    Organisation simple, priorisation, feedback régulier. Avancer
+                    par incréments plutôt que viser un "gros bloc" final.
                   </p>
                 </div>
               </div>
