@@ -23,10 +23,10 @@ export const HeroSection = () => {
           </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-              Actuellement en troisième année à Epitech Nancy.
+              Actuellement en quatrième année à Epitech Nancy.
             </p>
             <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-              Je cherche un stage à temps plein de 4 mois à partir du 1er avril 2026 (fin juillet / début août).
+              J'étudie durant cette année à İstanbul Nişantaşı Üniversitesi pour découvrir le domaine de la robotique.
             </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">

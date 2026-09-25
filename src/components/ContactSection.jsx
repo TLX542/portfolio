@@ -91,7 +91,7 @@ export const ContactSection = () => {
                       </h4>
                     </div>
                     <p className="text-muted-foreground">
-                      Laneuveville-devant-Nancy, 54410, France
+                      Yenişehir, Reyhan Cd. No:45, 34912 Pendik/İstanbul
                     </p>
                   </div>
                 </div>
